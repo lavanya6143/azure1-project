@@ -1,0 +1,9 @@
+{
+	"name": "lavazureproject",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e926b1de-2b10-443f-839e-9e61227cae2a",
+		"tenantId": "5a7cc8ab-a4dc-4f9b-bf60-66714049ad62"
+	}
+}
