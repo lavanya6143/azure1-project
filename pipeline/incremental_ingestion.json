@@ -146,6 +146,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "@greater(activity('azureSQLToLake').output.dataRead,0 )",
+						"type": "Expression"
+					},
 					"ifFalseActivities": [
 						{
 							"name": "DeleteEmptyData",
