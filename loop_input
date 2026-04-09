@@ -13,8 +13,8 @@
   },
   {
     "schema" : "dbo",
-    "table" : "DimUDate",
-    "cdc_col" : "updated_at",
+    "table" : "DimDate",
+    "cdc_col" : "date",
     "from_date" : ""
   },
   {
