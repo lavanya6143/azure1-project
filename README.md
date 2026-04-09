@@ -44,7 +44,7 @@ Azure SQL DB → Azure Data Factory → ADLS Gen2 (Bronze Layer) → Logic App �
 ## 📸 Pipeline Screenshots
 
 ### Main Pipeline (ForEach + Web Alert)
-![Main Pipeline](screenshots/main_pipeline.png)
+https://github.com/lavanya6143/azure1-project/blob/main/screenshot/foreach_if_condition.png
 
 ### ForEach Inner Activities + If Condition
 ![ForEach If Condition](screenshots/foreach_if_condition.png)
