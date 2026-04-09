@@ -318,12 +318,72 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "Alerts",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "ForEach1",
+						"dependencyConditions": [
+							"Succeeded",
+							"Failed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://prod-29.northcentralus.logic.azure.com:443/workflows/118dd561062a4936836e5b1a71c18d76/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=pRhEYGdChHRYNiy7c5MgZ-ss7VYM-doCcGNxFqoTW-c",
+					"body": {
+						"value": "{\n    \"pipeline_name\" : \"@{pipeline().Pipeline}\",\n    \"pipeline_runId\" : \"@{pipeline().RunId}\"\n\n}",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
 			"loop_in": {
 				"type": "array",
-				"defaultValue": "[   {     \"schema\" : \"dbo\",     \"table\" : \"DimUser\",     \"cdc_col\" : \"updated_at\"     \"from_date\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"DimTrack\",     \"cdc_col\" : \"updated_at\"     \"from_date\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"DimUDate\",     \"cdc_col\" : \"updated_at\"     \"from_date\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"DimArtist\",     \"cdc_col\" : \"updated_at\"     \"from_date\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"FactStream\",     \"cdc_col\" : \"updated_at\"     \"from_date\" : \"\"   }  ]"
+				"defaultValue": [
+					{
+						"schema": "dbo",
+						"table": "DimArtist",
+						"cdc_col": "updated_at",
+						"from_date": ""
+					},
+					{
+						"schema": "dbo",
+						"table": "DimDate",
+						"cdc_col": "date",
+						"from_date": ""
+					},
+					{
+						"schema": "dbo",
+						"table": "DimTrack",
+						"cdc_col": "updated_at",
+						"from_date": ""
+					},
+					{
+						"schema": "dbo",
+						"table": "DimUser",
+						"cdc_col": "updated_at",
+						"from_date": ""
+					},
+					{
+						"schema": "dbo",
+						"table": "FactStream",
+						"cdc_col": "stream_timestamp",
+						"from_date": ""
+					}
+				]
 			}
 		},
 		"variables": {
