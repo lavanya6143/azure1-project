@@ -44,14 +44,13 @@ Azure SQL DB → Azure Data Factory → ADLS Gen2 (Bronze Layer) → Logic App �
 ## 📸 Pipeline Screenshots
 
 ### Main Pipeline (ForEach + Web Alert)
-![Main Pipeline](screenshot/main_pipeline.png.PNG)
+![Main Pipeline](https://raw.githubusercontent.com/lavanya6143/azure1-project/main/screenshot/main_pipeline.png)
 
 ### ForEach Inner Activities + If Condition
-![ForEach If Condition](screenshot/foreach_if_condition.png.PNG)
+![ForEach If Condition](https://raw.githubusercontent.com/lavanya6143/azure1-project/main/screenshot/foreach_if_condition.png)
 
 ### Email Notification on Failure
-![Email Notification](screenshot/email_notification.png.PNG)
-
+![Email Notification](https://raw.githubusercontent.com/lavanya6143/azure1-project/main/screenshot/email_notification.png.PNG)
 ---
 
 ## 🔄 Pipeline Flow
