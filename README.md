@@ -50,7 +50,7 @@ https://github.com/lavanya6143/azure1-project/blob/main/screenshot/foreach_if_co
 ![ForEach If Condition](screenshots/foreach_if_condition.png)
 
 ### Email Notification on Failure
-screenshot/email_notification.png.PNG
+[screenshot/email_notification.png.PNG](https://github.com/lavanya6143/azure1-project/blob/main/screenshot/email_notification.png.PNG)
 
 ---
 
