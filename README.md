@@ -40,6 +40,20 @@ Azure SQL DB → Azure Data Factory → ADLS Gen2 (Bronze Layer) → Logic App �
 
 ---
 
+
+## 📸 Pipeline Screenshots
+
+### Main Pipeline (ForEach + Web Alert)
+![Main Pipeline](screenshots/main_pipeline.png)
+
+### ForEach Inner Activities + If Condition
+![ForEach If Condition](screenshots/foreach_if_condition.png)
+
+### Email Notification on Failure
+![Email Notification](screenshots/email_notification.png)
+
+---
+
 ## 🔄 Pipeline Flow
 
 1. **ForEach Loop** — iterates over all 5 tables dynamically
