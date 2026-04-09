@@ -52,27 +52,6 @@ Azure SQL DB → Azure Data Factory → ADLS Gen2 (Bronze Layer) → Logic App �
 
 ---
 
-## 📸 Pipeline Screenshots
-
-### Main Pipeline
-![Main Pipeline](screenshots/main_pipeline.png)
-
-### ForEach Activities
-![ForEach](screenshots/foreach_activities.png)
-
-### If Condition Branches
-![If Condition](screenshots/if_condition.png)
-
-### Logic App Designer
-![Logic App](screenshots/logic_app.png)
-
-### Bronze Container
-![Bronze Container](screenshots/bronze_container.png)
-
-### Email Notification
-![Email](screenshots/email_notification.png)
-
----
 
 ## ⚙️ Azure Services Used
 
